@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 10px #00f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #00f, #0ff);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #0ff, #00f);
+    box-shadow: 0 0 20px cyan;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#chatbox {
+    display: none;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
