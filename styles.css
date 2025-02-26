@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+}
+
+.animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0px 0px 10px cyan; }
+    to { text-shadow: 0px 0px 20px blue; }
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(45deg, cyan, blue);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Services */
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Testimonials */
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* AI Chatbot */
+#chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#chatbot-toggle {
+    background: cyan;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#chatbot-box {
+    display: none;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#chatbot:hover #chatbot-box {
+    display: block;
+  }
