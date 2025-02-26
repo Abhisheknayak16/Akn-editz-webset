@@ -1,3 +1,44 @@
+/* Modern Neon Glow Background */
+body {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* AKN EDITZ Big Text */
+.big-logo-text {
+    font-size: 120px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+}
+
+/* Small Text for Tagline */
+.small-tagline {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 body {
     font-family: Arial, sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
