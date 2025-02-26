@@ -103,3 +103,19 @@ h1 {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+.typing {
+    display: inline-block;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40, end) infinite, blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
