@@ -33,3 +33,33 @@ const themeToggle = document.getElementById("theme-toggle");
        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
      }
    });
+document.addEventListener("DOMContentLoaded", function() {
+    let navbar = document.querySelector(".navbar");
+
+    // Swipe (Touch) ke liye Event Listener
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    navbar.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - navbar.offsetLeft;
+        scrollLeft = navbar.scrollLeft;
+    });
+
+    navbar.addEventListener("mouseleave", () => {
+        isDown = false;
+    });
+
+    navbar.addEventListener("mouseup", () => {
+        isDown = false;
+    });
+
+    navbar.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - navbar.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed
+        navbar.scrollLeft = scrollLeft - walk;
+    });
+});
