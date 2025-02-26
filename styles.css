@@ -144,3 +144,28 @@ h1 {
 .navbar a:hover {
     color: #ffcc00;
 }
+.work-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    }
+.download-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(255, 0, 150, 0.4);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 25px rgba(255, 0, 150, 0.5);
+}
