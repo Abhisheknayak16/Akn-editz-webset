@@ -199,3 +199,16 @@ footer {
      font-size: 18px;
      color: #6e8efb;
    }
+/* Navbar Scroll Fix */
+.navbar {
+    display: flex;
+    overflow-x: auto;  /* Horizontal Scroll Enable */
+    white-space: nowrap; /* Text Wrap Hatao */
+    scrollbar-width: none; /* Firefox ke liye scrollbar hide */
+    -ms-overflow-style: none; /* IE ke liye scrollbar hide */
+}
+
+/* Scrollbar hide karne ke liye */
+.navbar::-webkit-scrollbar {
+    display: none;
+  }
