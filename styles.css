@@ -262,51 +262,6 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 115, 0, 0.7);
 }
-/* Booking Form */
-.booking-form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-}
-
-.booking-form h2, .price-index h2 {
-    font-size: 2rem;
-    background: linear-gradient(90deg, #ff7300, #ff004c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.input-field {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.input-field input,
-.input-field select,
-.input-field textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-.input-field input[type="submit"] {
-    background: linear-gradient(90deg, #ff7300, #ff004c);
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.input-field input[type="submit"]:hover {
-    transform: translateY(-3px);
-}
 
 /* Price Index */
 .price-index {
