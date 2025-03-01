@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="booking-form">
+        <h2>📑 Book Your Service</h2>
+        <form action="https://formspree.io/f/xayrvnlo" method="POST">
+            <div class="input-field">
+                <label for="client-name">Full Name</label>
+                <input type="text" id="client-name" name="client-name" required>
+            </div>
+            <div class="input-field">
+                <label for="whatsapp">WhatsApp Number</label>
+                <input type="text" id="whatsapp" name="whatsapp">
+            </div>
+            <div class="input-field">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-field">
+                <label for="social">Instagram/Facebook/Twitter (Optional)</label>
+                <input type="text" id="social" name="social">
+            </div>
+            <div class="input-field">
+                <label for="service">Select Service</label>
+                <select id="service" name="service" required>
+                    <option value="Reels Editing">Reels Editing</option>
+                    <option value="Long Video Editing">Long Video Editing</option>
+                    <option value="Short Video Editing">Short Video Editing</option>
+                    <option value="Graphics Design">Graphics Design</option>
+                    <option value="Thumbnail, Logo & Icons">Thumbnail, Logo & Icons</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Link Creator">Link Creator</option>
+                    <option value="Ethical Hacking">Ethical Hacking</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <label for="details">Describe Your Requirements</label>
+                <textarea id="details" name="details" required></textarea>
+            </div>
+            <div class="input-field">
+                <label for="attachment">Attach Any File (Optional)</label>
+                <input type="file" id="attachment" name="attachment">
+            </div>
+            <div class="input-field">
+                <input type="submit" value="Submit Booking">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
