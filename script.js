@@ -63,16 +63,32 @@ document.addEventListener("DOMContentLoaded", function() {
         navbar.scrollLeft = scrollLeft - walk;
     });
 });
-const text = "Welcome to AKN Edits";
-let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const textArray = ["Welcome to AKN Edits", "Professional Video Editing", "Graphic Design & More!"];
+    let textIndex = 0;
+    let charIndex = 0;
+    const typingElement = document.querySelector(".typing-effect");
 
-function typeEffect() {
-    document.querySelector(".typing-effect").innerHTML = text.slice(0, index);
-    index++;
-
-    if (index <= text.length) {
-        setTimeout(typeEffect, 100);
+    function typeEffect() {
+        if (charIndex < textArray[textIndex].length) {
+            typingElement.textContent += textArray[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, 100);
+        } else {
+            setTimeout(eraseEffect, 2000);
+        }
     }
-}
 
-document.addEventListener("DOMContentLoaded", typeEffect);
+    function eraseEffect() {
+        if (charIndex > 0) {
+            typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseEffect, 50);
+        } else {
+            textIndex = (textIndex + 1) % textArray.length;
+            setTimeout(typeEffect, 1000);
+        }
+    }
+
+    typeEffect();
+});
