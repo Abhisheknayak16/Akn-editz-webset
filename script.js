@@ -63,32 +63,20 @@ document.addEventListener("DOMContentLoaded", function() {
         navbar.scrollLeft = scrollLeft - walk;
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const textArray = ["Welcome to AKN Edits"];
-    let textIndex = 0;
-    let charIndex = 0;
-    const typingElement = document.querySelector(".typing-effect");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const typedText = document.querySelector(".typing-effect");
+        const text = "Welcome to AKN Edits";
+        let index = 0;
 
-    function typeEffect() {
-        if (charIndex < textArray[textIndex].length) {
-            typingElement.textContent += textArray[textIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(typeEffect, 100);
-        } else {
-            setTimeout(eraseEffect, 2000);
+        function typeEffect() {
+            if (index < text.length) {
+                typedText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 150); // टाइपिंग स्पीड 
+            }
         }
-    }
 
-    function eraseEffect() {
-        if (charIndex > 0) {
-            typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(eraseEffect, 50);
-        } else {
-            textIndex = (textIndex + 1) % textArray.length;
-            setTimeout(typeEffect, 1000);
-        }
-    }
-
-    typeEffect();
-});
+        typeEffect();
+    });
+</script>
