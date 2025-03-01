@@ -328,4 +328,7 @@ footer {
     margin: 10px auto;
 }
   
-
+body {
+    background-color: black !important;
+    color: white !important;
+  }
