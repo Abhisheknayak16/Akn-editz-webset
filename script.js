@@ -63,27 +63,3 @@ document.addEventListener("DOMContentLoaded", function() {
         navbar.scrollLeft = scrollLeft - walk;
     });
 });
-/* Home Section Styling */
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Dark Gradient Background */
-    color: #fff;
-}
-
-.content {
-    max-width: 90%;
-    padding: 20px;
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    const welcomeText = document.getElementById("welcome-text");
-
-    // 1. Welcome Text को Fade-in और Slide Effect देने के लिए Delay Set करना
-    setTimeout(() => {
-        welcomeText.classList.add("visible");
-    }, 500);
-});
