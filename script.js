@@ -78,39 +78,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
-document.getElementById("booking-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const formData = {
-        name: document.getElementById("name").value,
-        service: document.getElementById("service").value,
-        videoLength: document.getElementById("video-length").value,
-        editingType: document.getElementById("editing-type").value,
-        budget: document.getElementById("budget").value,
-        email: document.getElementById("email").value,
-        whatsapp: document.getElementById("whatsapp").value,
-        instructions: document.getElementById("instructions").value,
-        driveLink: document.getElementById("drive-link").value
-    };
-
-    const emailBody = `
-        Name: ${formData.name}
-        Service: ${formData.service}
-        Video Length: ${formData.videoLength} minutes
-        Editing Type: ${formData.editingType}
-        Budget: $${formData.budget}
-        Email: ${formData.email}
-        WhatsApp: ${formData.whatsapp}
-        Additional Instructions: ${formData.instructions}
-        Google Drive Link: ${formData.driveLink}
-    `;
-
-    window.location.href = `mailto:anayak8543@gmail.com?subject=New Service Request&body=${encodeURIComponent(emailBody)}`;
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const bookingForm = document.querySelector("form");
-    
-    bookingForm.addEventListener("submit", function (event) {
-        alert("Your booking request has been sent successfully!");
-    });
-});
