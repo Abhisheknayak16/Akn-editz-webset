@@ -29,11 +29,43 @@
   <!-- Home Section -->
 <section id="home" class="home">
     <div class="content">
-        <h1 class="typing-effect"></h1 Welcome to akn editz > <!-- Typing Effect Ke Liye H1 -->
+        <h1><span class="typing-effect"></span></h1>
         <p>Professional Video Editing, Graphic Design, and More!</p>
         <a href="#services" class="btn-3d">Explore Services</a>
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const typedText = document.querySelector(".typing-effect");
+        const words = ["Welcome to AKN Edits", "Professional Video Editing", "Graphic Design and More!"];
+        let wordIndex = 0;
+        let letterIndex = 0;
+        let currentWord = words[wordIndex];
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typedText.textContent = currentWord.substring(0, letterIndex--);
+            } else {
+                typedText.textContent = currentWord.substring(0, letterIndex++);
+            }
+
+            if (!isDeleting && letterIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, 1000); // 1-second delay before deleting
+            } else if (isDeleting && letterIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                currentWord = words[wordIndex];
+            }
+
+            setTimeout(typeEffect, isDeleting ? 100 : 200);
+        }
+
+        typeEffect();
+    });
+</script>
 
   <!-- Work Section -->
   <section id="work" class="work">
