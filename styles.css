@@ -263,3 +263,23 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 115, 0, 0.7);
 }
+.booking-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.booking-btn {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+}
+.booking-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.7);
+  }
