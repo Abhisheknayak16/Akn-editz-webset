@@ -374,3 +374,95 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
                                 }
+/* Booking Form Container */
+.form-container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    max-width: 500px;
+    margin: auto;
+    color: white;
+}
+
+/* Input Fields */
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* 3D Submit Button */
+.form-container button {
+    background: linear-gradient(90deg, #ff7300, #ff004c);
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 115, 0, 0.7);
+  }/* Price Index Page */
+.price-container {
+    background: linear-gradient(135deg, #111, #222);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+/* Service Pricing Cards */
+.price-card {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 10px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+}
+
+.price-card h3 {
+    color: #00ffcc;
+    font-size: 1.5rem;
+}
+
+.price-card p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }/* Stylish Buttons */
+.btn-3d {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #ff7300, #ff004c);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 115, 0, 0.7);
+}
