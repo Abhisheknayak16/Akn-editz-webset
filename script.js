@@ -63,3 +63,18 @@ document.addEventListener("DOMContentLoaded", function() {
         navbar.scrollLeft = scrollLeft - walk;
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const typedText = document.querySelector(".typing-effect");
+    const text = "Welcome to AKN Edits";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            typedText.textContent += text[index];
+            index++;
+            setTimeout(typeEffect, 100);
+        }
+    }
+
+    typeEffect();
+});
