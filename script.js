@@ -107,3 +107,10 @@ document.getElementById("booking-form").addEventListener("submit", function(even
 
     window.location.href = `mailto:anayak8543@gmail.com?subject=New Service Request&body=${encodeURIComponent(emailBody)}`;
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const bookingForm = document.querySelector("form");
+    
+    bookingForm.addEventListener("submit", function (event) {
+        alert("Your booking request has been sent successfully!");
+    });
+});
