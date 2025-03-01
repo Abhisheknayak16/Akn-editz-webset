@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const textArray = ["Welcome to AKN Edits", "Professional Video Editing", "Graphic Design & More!"];
+    const textArray = ["Welcome to AKN Edits"];
     let textIndex = 0;
     let charIndex = 0;
     const typingElement = document.querySelector(".typing-effect");
