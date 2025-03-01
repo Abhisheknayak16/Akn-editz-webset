@@ -79,51 +79,11 @@ document.addEventListener("DOMContentLoaded", function() {
     padding: 20px;
 }
 
-/* Welcome Text Animation */
-.hidden {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const welcomeText = document.getElementById("welcome-text");
 
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: linear-gradient(90deg, #ff7300, #ff004c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.sub-heading {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: 10px;
-}
-
-/* 3D Button Styling */
-.btn-3d {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    background: linear-gradient(90deg, #ff7300, #ff004c);
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.5);
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-3d:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(255, 115, 0, 0.7);
-  }
+    // 1. Welcome Text को Fade-in और Slide Effect देने के लिए Delay Set करना
+    setTimeout(() => {
+        welcomeText.classList.add("visible");
+    }, 500);
+});
