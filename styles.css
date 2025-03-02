@@ -263,27 +263,47 @@ footer {
     box-shadow: 0 8px 20px rgba(255, 115, 0, 0.7);
 }
 
-/* Price Index */
-.price-index {
+/* Booking Page Styling */
+.booking-container {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
     color: white;
     border-radius: 10px;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-.price-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    margin: 10px auto;
+.booking-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff7300;
 }
-  
-body {
-    background-color: black !important;
-    color: white !important;
-  }
+
+.booking-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-3d {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #ff7300, #ff004c);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.5);
+      }
