@@ -88,3 +88,11 @@ function openPriceModal() {
 function closePriceModal() {
     document.getElementById("priceModal").style.display = "none";
 }
+
+// Close Modal when clicking outside the image
+window.onclick = function(event) {
+    let modal = document.getElementById("priceModal");
+    if (event.target == modal) {
+        closePriceModal();
+    }
+};
