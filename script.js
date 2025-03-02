@@ -96,3 +96,15 @@ window.onclick = function(event) {
         closePriceModal();
     }
 };
+document.addEventListener("DOMContentLoaded", function() {
+    const layers = document.querySelectorAll(".animation-layer");
+    
+    layers.forEach(layer => {
+        let speed = Math.random() * 2 + 1;
+        setInterval(() => {
+            let newX = Math.random() * window.innerWidth;
+            let newY = Math.random() * window.innerHeight;
+            layer.style.transform = `translate(${newX}px, ${newY}px)`;
+        }, speed * 3000);
+    });
+});
