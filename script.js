@@ -78,3 +78,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
+document.getElementById("priceImg").src = "images/image-list.jpg";
