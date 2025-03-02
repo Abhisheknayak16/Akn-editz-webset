@@ -78,4 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
-document.getElementById("priceImg").src = "images/image-list.jpg";
+// Open Modal Function
+function openPriceModal() {
+    document.getElementById("priceModal").style.display = "block";
+    document.getElementById("priceImg").src = "https://raw.githubusercontent.com/Abhisheknayak16/Akn-editz-webset/main/20250302_092652.jpg"; // Updated Image URL
+}
+
+// Close Modal Function
+function closePriceModal() {
+    document.getElementById("priceModal").style.display = "none";
+}
